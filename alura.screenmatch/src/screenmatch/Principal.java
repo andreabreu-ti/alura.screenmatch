@@ -4,7 +4,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Filme meuFilme = new Filme(); // Tipo referência, objeto na memória, variável que sabe referênciar
+		Filme meuFilme = new Filme(); // Tipo referência, objeto na memória, variável de referênciar
 
 		meuFilme.nome = "O Poderoso Chefão";
 		meuFilme.anoDeLancamento = 1970;

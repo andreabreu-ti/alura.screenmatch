@@ -11,9 +11,21 @@ public class Filme {
 	String nome;
 	int anoDeLancamento;
 	boolean incluidoNoPlano;
-	double somaAvaliacao;
-	int totalDeAvaliacao;
+
+	/*
+	 * Private Modificadores de acesso / ou Visibilidade
+	 */
+	private double somaAvaliacao;
+	private int totalDeAvaliacao;
+
 	int duracaoEmMinutos;
+
+	/*
+	 * Metodo acessor do modificador (Privado)
+	 */
+	int getTotalDeAvaliacao() {
+		return totalDeAvaliacao;
+	}
 
 	/*
 	 * Métodos - vão fazer alguma coisa

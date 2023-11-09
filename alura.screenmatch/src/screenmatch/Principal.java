@@ -16,9 +16,7 @@ public class Principal {
 		meuFilme.avalia(10);
 		meuFilme.avalia(5);
 
-		System.out.println(meuFilme.somaAvaliacao);
-		System.out.println(meuFilme.totalDeAvaliacao);
-		
+		System.out.println("Total de Avaliações: " + meuFilme.getTotalDeAvaliacao());
 		System.out.println(meuFilme.pegaMedia());
 
 	}

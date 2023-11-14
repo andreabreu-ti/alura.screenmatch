@@ -1,11 +1,19 @@
 package screenmatch;
 
 import br.com.screenmatch.calculos.CalculadoraDeTempo;
+import br.com.screenmatch.calculos.FiltroRecomendacao;
+import br.com.screenmatch.modelos.Episodio;
 import br.com.screenmatch.modelos.Filme;
 import br.com.screenmatch.modelos.Serie;
 
 public class Principal {
 
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 		Filme meuFilme = new Filme(); // Tipo referência, objeto na memória, variável de referênciar
@@ -46,6 +54,19 @@ public class Principal {
 		calculadora.inclui(lost);
 
 		System.out.println(calculadora.getTempoTotal());
+		
+		FiltroRecomendacao filtro = new FiltroRecomendacao();
+		filtro.filtra(meuFilme);
+		
+		Episodio episodio = new Episodio();
+		
+		episodio.setNumero(1);
+		episodio.setSerie(lost);
+		episodio.setTotalDeVisualizacoes(300);
+		filtro.filtra(episodio);
+		
+		
+		
 
 	}
 

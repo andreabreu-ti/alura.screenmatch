@@ -1,5 +1,7 @@
 package screenmatch;
 
+import java.util.ArrayList;
+
 import br.com.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.screenmatch.calculos.FiltroRecomendacao;
 import br.com.screenmatch.modelos.Episodio;
@@ -66,8 +68,35 @@ public class Principal {
 		filtro.filtra(episodio);
 		
 		
+		var filmeDoPaulo = new Filme();
+		filmeDoPaulo.setDuracaoEmMinutos(200);
+		filmeDoPaulo.setNome("Dogville");
+		filmeDoPaulo.setAnoDeLancamento(2003);
+		filmeDoPaulo.avalia(10);
+		
+		ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+		
+		listaDeFilmes.add(filmeDoPaulo);
+		listaDeFilmes.add(meuFilme);
+		listaDeFilmes.add(outroFilme);
+		
+		System.out.println("Tamanho da Lista: "+ listaDeFilmes.size());
+		System.out.println("Primeiro Filme: "+ listaDeFilmes.get(0).getNome());
+		
+		System.out.println(listaDeFilmes);
+		
+		System.out.println("toString do Filme: "+ listaDeFilmes.get(0).toString());
 		
 
 	}
 
 }
+
+
+
+
+
+
+
+
+

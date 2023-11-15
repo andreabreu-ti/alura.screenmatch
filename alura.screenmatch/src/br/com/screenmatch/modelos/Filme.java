@@ -2,7 +2,7 @@ package br.com.screenmatch.modelos;
 
 import br.com.screenmatch.calculos.Classificavel;
 
-public class Filme extends Titulo implements Classificavel{  //Todo Filme é um título
+public class Filme extends Titulo implements Classificavel { // Todo Filme é um título
 
 	private String diretor;
 
@@ -19,5 +19,11 @@ public class Filme extends Titulo implements Classificavel{  //Todo Filme é um 
 		// TODO Auto-generated method stub
 		return (int) (pegaMedia() / 2);
 	}
-	
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Filme: " + this.getNome() + "(" + this.getAnoDeLancamento() + ")";
+	}
+
 }

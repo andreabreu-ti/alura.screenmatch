@@ -2,6 +2,10 @@ package br.com.screenmatch.modelos;
 
 public class Serie extends Titulo {
 
+	public Serie(String nome, int anoDeLancamento) {
+		super(nome, anoDeLancamento);
+	}
+
 	private int temporadas;
 	private boolean ativa;
 	private int episodiosPorTemporada;
@@ -38,7 +42,7 @@ public class Serie extends Titulo {
 	public void setMinutosPorEpisodio(int minutosPorEpisodio) {
 		this.minutosPorEpisodio = minutosPorEpisodio;
 	}
-	
+
 	// Anotação @Override - possibilita a sobrescrita de um método
 	@Override
 	public int getDuracaoEmMinutos() {

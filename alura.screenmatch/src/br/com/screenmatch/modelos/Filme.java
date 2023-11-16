@@ -6,6 +6,11 @@ public class Filme extends Titulo implements Classificavel { // Todo Filme é um
 
 	private String diretor;
 
+	public Filme(String nome, int anoDeLancamento) {
+		this.setNome(nome);
+	}
+
+
 	public String getDiretor() {
 		return diretor;
 	}

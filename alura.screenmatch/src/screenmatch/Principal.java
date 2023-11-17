@@ -12,8 +12,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Filme meuFilme = new Filme("O Poderoso Chefão"); // Tipo referência, objeto na memória, variável de referênciar
-		meuFilme.setAnoDeLancamento(1970);
+		Filme meuFilme = new Filme("O Poderoso Chefão", 1970); // Tipo referência, objeto na memória, variável de referênciar
 		meuFilme.setDuracaoEmMinutos(180);
 		System.out.println("Duração do Filme: " + meuFilme.getDuracaoEmMinutos());
 		meuFilme.exibeFichaTecnica();
@@ -32,8 +31,7 @@ public class Principal {
 		System.out.println("Duração para maratornar Lost: " + lost.getDuracaoEmMinutos());
 
 		
-		Filme outroFilme = new Filme("Avatar"); // Tipo referência, objeto na memória, variável de referênciar
-		outroFilme.setAnoDeLancamento(2023);
+		Filme outroFilme = new Filme("Avatar", 2023); // Tipo referência, objeto na memória, variável de referênciar
 		outroFilme.setDuracaoEmMinutos(200);
 		CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
 		calculadora.inclui(meuFilme);
@@ -51,9 +49,8 @@ public class Principal {
 		filtro.filtra(episodio);
 		
 		
-		var filmeDoPaulo = new Filme("Dogville");
+		var filmeDoPaulo = new Filme("Dogville", 2023);
 		filmeDoPaulo.setDuracaoEmMinutos(200);
-		filmeDoPaulo.setAnoDeLancamento(2003);
 		filmeDoPaulo.avalia(10);
 		ArrayList<Filme> listaDeFilmes = new ArrayList<>();
 		listaDeFilmes.add(filmeDoPaulo);

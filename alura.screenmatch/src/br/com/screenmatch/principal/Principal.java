@@ -1,4 +1,4 @@
-package screenmatch;
+package br.com.screenmatch.principal;
 
 import java.util.ArrayList;
 

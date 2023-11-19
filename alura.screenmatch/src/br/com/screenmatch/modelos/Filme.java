@@ -21,7 +21,6 @@ public class Filme extends Titulo implements Classificavel { // Todo Filme é um
 
 	@Override
 	public int getClassificacao() {
-		// TODO Auto-generated method stub
 		return (int) (pegaMedia() / 2);
 	}
 

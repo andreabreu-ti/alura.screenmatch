@@ -1,6 +1,6 @@
 package br.com.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
 
 	/*
 	 * Conceito de Classe --> Especificar o que o Filme tem Abstração: O que o filme
@@ -22,6 +22,7 @@ public class Titulo {
 		this.nome = nome;
 		this.anoDeLancamento = anoDeLancamento;
 	}
+
 	/*
 	 * Metodo acessor do modificador (Privado)
 	 */
@@ -77,4 +78,10 @@ public class Titulo {
 	public double pegaMedia() {
 		return somaAvaliacao / totalDeAvaliacao;
 	}
+
+	@Override
+	public int compareTo(Titulo outroTitulo) {
+		return this.getNome().compareTo(outroTitulo.getNome());
+	}
+
 }

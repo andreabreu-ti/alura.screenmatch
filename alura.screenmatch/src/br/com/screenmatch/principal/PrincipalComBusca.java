@@ -8,6 +8,10 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Scanner;
 
+import com.google.gson.Gson;
+
+import br.com.screenmatch.modelos.Titulo;
+
 public class PrincipalComBusca {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
@@ -26,7 +30,12 @@ public class PrincipalComBusca {
 		//https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html
 		HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 		
-		System.out.println(response.body());
-
+		
+		String json = response.body();
+		System.out.println(json);
+		
+		Gson gson = new Gson();
+		Titulo meuTitulo = gson.fromJson(json, Titulo.class);
+		System.out.println("Título: " + meuTitulo.getNome());
 	}
 }

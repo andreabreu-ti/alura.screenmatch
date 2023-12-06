@@ -1,5 +1,7 @@
 package br.com.screenmatch.modelos;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo implements Comparable<Titulo> {
 
 	/*
@@ -11,7 +13,10 @@ public class Titulo implements Comparable<Titulo> {
 	/*
 	 * Private Modificadores de acesso / ou Visibilidade
 	 */
+	@SerializedName("Title")
 	private String nome;
+	
+	@SerializedName("Year")
 	private int anoDeLancamento;
 	private boolean incluidoNoPlano;
 	private double somaAvaliacao;
@@ -62,9 +67,6 @@ public class Titulo implements Comparable<Titulo> {
 		this.duracaoEmMinutos = duracaoEmMinutos;
 	}
 
-	/*
-	 * Métodos - vão fazer alguma coisa
-	 */
 	public void exibeFichaTecnica() {
 		System.out.println("Nome do Filme: " + nome);
 		System.out.println("Ano de Lançamento: " + anoDeLancamento);
@@ -83,5 +85,7 @@ public class Titulo implements Comparable<Titulo> {
 	public int compareTo(Titulo outroTitulo) {
 		return this.getNome().compareTo(outroTitulo.getNome());
 	}
+	
+	
 
 }

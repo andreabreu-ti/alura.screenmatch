@@ -4,6 +4,7 @@
 ![Postman](https://img.shields.io/badge/Postman-%23ED8B00.svg??style=for-the-badge&logo=openjdk&logoColor=white)
 [![Maven Badge](https://badgen.net/badge/icon/maven?icon=maven&label)]()
 [![Github Badge](https://badgen.net/badge/icon/github?icon=github&label)]()
+![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft_SQL_Server-CC2927)
 
 # Conteúdo do Curso
 ## Java: trabalhando com lambdas, streams e Spring Framework
